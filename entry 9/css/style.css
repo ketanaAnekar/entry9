@@ -1,0 +1,286 @@
+body{
+    background-color: rgb(255, 26, 194);
+    overflow-x: hidden;
+
+}
+.main{
+    position: relative;
+    left: 10%;
+    top: 50px;
+}
+@keyframes expandShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.16);
+    }
+}
+@keyframes expandS {
+    0%, 100% {
+        transform: scale(1.16);
+    }
+    50% {
+        transform: scale(1);
+    }  
+}
+
+.top{
+    width: 17%;
+    height: -100%;
+    background-color: rgb(255, 0, 0);
+    border: 6px solid white;
+    position: relative;
+    top: 100px;
+    animation: expandShrink 2s infinite;
+}
+#songs{
+    
+    font-family: "groupie-gloss", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 800%;
+color: rgb(116, 61, 243);
+position:relative;
+left: 4.5%;
+}
+.As{
+    width: 20%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: rgb(0, 136, 255);
+    border: 6px solid green;
+    transform: rotate(-20deg);
+    position: relative;
+    left: 15%;
+    top: -170px;
+    animation: expandS 2s infinite;
+}
+#as{
+    font-family: "bdr-mono", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 400%;
+position:relative;
+left: 35%;
+color: white;
+}
+.ART{
+    width: 20%;
+    height: 100%;
+    background-color: orange;
+    border: 7px dotted red;
+    position: relative;
+    left: 30%;
+    top: -500px;
+    animation: expandShrink 2s infinite;
+}
+#art{
+    font-family: "glodok", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 600%;
+color:rgb(255, 0, 0);
+position: relative;
+left: 10%;
+}
+.MOVEMENTS{
+    width: 30%;
+    height: 70%;
+    background-color: rgb(0, 225, 0);
+    position: relative;
+    top: -600px;
+    left: 50%;
+    border: 7px solid blue;
+    animation: expandS 2s infinite;
+
+}
+#movements{
+    font-family: "fit", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 700%;
+position: relative;
+left: 10%;
+color: purple;
+}
+.sentence{
+    position: relative;
+    top: -500px;
+    text-align: center;
+}
+#sen{
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: white;
+}
+.box{
+    width: 1600px;
+    height: 1080px;
+    background-color: black;
+    position: relative;
+    left: -10px;
+    top: -300px
+}
+.rene{
+    background-image: url(rene\ painitngs.gif);
+    background-repeat: repeat;
+    background-size: 1920px x 1080px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 150px;
+    left: 600px;
+}
+.lan{
+    font-family: "altesse-std-24pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 500%;
+    color:rgb(255, 26, 194);
+    text-align: center;
+    position: relative;
+    top: 280px;
+    left: -50px;
+}
+.del{
+    font-family: "altesse-std-24pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 500%;
+    color:rgb(255, 26, 194);
+    text-align: center;
+    position: relative;
+    top: 670px;
+    left: -60px;
+    
+}
+#lana{
+    font-family: "fabiola-capitals", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 600%;
+text-align: center;
+position: relative;
+top: 60px;
+}
+.box2{
+    width: 1600px;
+    height: 1080px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -360px;
+    left: -10px;
+    
+}
+
+.emp{
+    background-image: url(scream.gif);
+    background-repeat: repeat;
+    background-size: 1920px x 1080px;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    top: 40px;
+    left: 600px;
+}
+#em{
+    font-family: "fabiola-capitals", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 400%; 
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.great{
+    font-family: "superior-title", serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+-webkit-text-stroke: .5px black;
+font-size: 400%;
+position: relative;
+top: 200px;
+left: 440px;
+}
+.pink{
+    font-family: "superior-title", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    -webkit-text-stroke: .5px black;
+    font-size: 400%;
+    position: relative;
+    top: 700px;  
+    left: 600px;
+}
+.box3{
+    margin-right: auto;
+    width: 1600px;
+    height: 1080px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: -460px;
+    left: -10px;
+}
+.ob{
+    font-family: "area-normal", sans-serif;
+font-weight: 400;
+font-style: italic;
+color: white;
+font-size: 350%;
+position: relative;
+left: 600px;
+top: 150px;
+}
+.grimes{
+    font-family: "area-normal", sans-serif;
+font-weight: 400;
+font-style: italic;
+color: white;
+font-size: 350%;
+position: relative;
+left: 630px;
+top: 500px;
+}
+.cube{
+    background-image: url(cube.gif);
+    background-repeat: repeat;
+    background-size: 1920px x 1080px;
+    width: 300px;
+    height: 370px;
+    position: relative;
+    left: 600px;
+}
+#cu{
+    font-family: "fabiola-capitals", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 400%; 
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+.back{
+    position: relative;
+     font-family: "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: italic; 
+
+
+}
+.next{
+    position: relative;
+    left: 1410px;
+    font-family: "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: italic; 
+
+}

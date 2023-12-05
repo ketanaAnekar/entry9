@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yit8fla.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="back"> BACK</a>
+        <a href="#" class="next"> NEXT</a>
+    </div>
+    <div class="main">
+    <div class="top">
+        <h1 id="songs"> SONGS</h1>
+    </div>
+    <div class="As">
+        <h1 id="as">AS</h1>
+    </div>
+    <div class="ART">
+        <h1 id="art"> ART</h1>
+    </div>
+    <div class="MOVEMENTS">
+        <h1 id="movements"> MOVEMENTS</h1>
+    </div>
+</div>
+<div class="sentence">
+   <h2 id="sen">this is only to fulfill my art student quota...</h2>
+</div>
+
+<div class="box">
+    <div class="lan">
+        ultraviolence
+    </div>
+    <div class="del">
+       lana del rey
+    </div>
+    <div class="rene" id="reneElement" onclick="toggleAudio('Lana Del Rey - Ultraviolence (Audio).mp3')">
+        <h2 id="lana">RENAISSANCE ERA </h2>
+    </div>
+</div>
+<div class="box2">
+    <div class="great">
+        The Great Gig In The Sky
+    </div>
+    <div class="pink">
+        Pink Floyd
+    </div>
+    <div class="emp" id="empElement" onclick="toggleAudio('Pink Floyd - The Great Gig In The Sky (2011 Remastered).mp3')">
+        <h2 id="em">EMPRESSIONISM</h2>
+    </div>
+</div>
+
+<div class="box3">
+    <div class="ob">
+        OBLIVION
+    </div>
+    <div class="grimes">
+        GRIMES
+    </div>
+    <div class="cube" id="cubeElement" onclick="toggleAudio('Grimes - Oblivion.mp3')">
+        <h2 id="cu"> CUBISM</h2>
+    </div>
+</div>
+
+
+
+</div>
+
+
+<script>
+    var audioElement = new Audio('Lana Del Rey - Ultraviolence (Audio).mp3');
+    var isPlaying = false;
+
+    function toggleAudio(songPath) {
+        if (isPlaying) {
+            audioElement.pause();
+            isPlaying = false;
+        } else {
+            audioElement.src = songPath;
+            audioElement.play();
+            isPlaying = true;
+        }
+    }
+    var audioElement = new Audio('Lana Del Rey - Ultraviolence (Audio).mp3');
+        var empAudioElement = new Audio('Pink Floyd - The Great Gig In The Sky (2011 Remastered).mp3');
+        var isPlaying = false;
+
+        function toggleAudio(songPath) {
+            if (isPlaying) {
+                audioElement.pause();
+                empAudioElement.pause(); // Pause the emp audio when clicking on other elements
+                isPlaying = false;
+            } else {
+                audioElement.src = songPath;
+                audioElement.play();
+                empAudioElement.src = 'Pink Floyd - The Great Gig In The Sky (2011 Remastered).mp3'; // Set the emp audio source
+                isPlaying = true;
+            }
+        }
+        var audioElement = new Audio('Lana Del Rey - Ultraviolence (Audio).mp3');
+        var empAudioElement = new Audio('Pink Floyd - The Great Gig In The Sky (2011 Remastered).mp3');
+        var cubeAudioElement = new Audio('Grimes - Oblivion.mp3');
+        var isPlaying = false;
+
+        function toggleAudio(songPath) {
+            if (isPlaying) {
+                audioElement.pause();
+                empAudioElement.pause();
+                cubeAudioElement.pause(); // Pause the cube audio when clicking on other elements
+                isPlaying = false;
+            } else {
+                audioElement.src = songPath;
+                audioElement.play();
+                empAudioElement.src = 'Pink Floyd - The Great Gig In The Sky (2011 Remastered).mp3';
+                cubeAudioElement.src = 'Grimes - Oblivion.mp3'; // Set the cube audio source
+                isPlaying = true;
+            }
+        }
+</script>
+    
+</body>
+</html>
